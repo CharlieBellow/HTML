@@ -1,0 +1,242 @@
+<!-- 1 Conceitos -->
+
+
+<h1>preview: ctrl+shift +p e digita preview abre</h1>
+
+
+comnetários
+<!-- isso é um comentário -->
+
+
+marcação:
+<h1>O Título</h1>
+
+<!-- elementos vazios-->
+<img src="">
+<input type="text">
+<!-- são tags que não precisam de fechamento pq não tem/não precisam de conteúdo-->
+
+
+<!-- atributos-->
+<img src="" alt="texto alternativo">
+<input type="text">
+<!-- são as coisas que estão dentro das tags: src="", alt=""-->
+
+<!-- atributos booleanos-->
+<input type="text" disabled>
+<!--são aqueles que não precisam de conteúdo, no caso o desabled não precisa de =""-->
+
+Aspas
+
+<a href="www.google.com" title="">link</a>
+
+<!-- usa sempre aspas duplas pra não confundir com o apóstrofo do inglês-->
+
+
+<!--atributos globais
+- class (usa para aplicar estilo CSS e acessar no javascript)
+-contenteditable (serve para editar o conteúdo)
+-data-* (depois do traço '-' pode-colocar-qualquer-coisa)
+-hidden (esconder a tag)
+-id (dever ser usado um por página, se precisar repetir, usa a classe. pode ter 2 id mas com nomes diferentes)
+-style (aplica estilização do css no HTML)
+-tabindex (diz a ordem de sequência em que os lementos na tela vaõ ser selecionados com a tecla tab. serve para acessibilidade)
+-title (define o título daquele elemento, se descansar o mouse em cima, o que foi escrito dentro de title aparece aparece)
+
+
+para saber mais: https://developer.mozilla.org/pt-BR/docs/Web/HTML
+
+-->
+<div class="carrinho">
+    <!--elemetos aqui-->
+</div>
+
+
+<!--aninhamento de tags
+
+- fluxo
+- hierarquia
+-posicionamento
+-->
+<p>
+escrevi meu <em>texto</em> aqui
+</p>
+
+<!--tudo que estiver dentro da tag <p> vai ficar em linha, pra quebrar a linha tem que usar outra tag p dentro dessa, ou  a tag <br> antes do texto que quer quebrar -->
+<p>exemplo de <br>quebra de linha</p>
+
+<!--Praticando-->
+
+<p>esse é o meu primeiro <strong>parágrafo</strong>
+    <br> onde quebrei uma <b>linha</b>
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid quos animi illo. Dolor aspernatur excepturi perspiciatis, nostrum assumenda quidem harum ipsam porro tenetur, commodi corporis non illum quod sunt voluptas.
+</p>
+
+<p>esse é meu segndo parágrafo. e para <a href="www.google.com">saber mais.</a> visite esse site</p>
+
+
+<!--Caracteres reservados-->
+<p>
+    &nbsp;Para dar um espaço de parágrafo, tipo o tab do word, usa: <!--&nbsp;--> para dar dois espaços é só escrever duas vezes</p>
+
+<!--para colocar os caracteres especiais no texto sem cagar o código faz assim:-->
+
+<!--
+- no caso do menor que < usa: &lt; (lower than)
+- no caso do maior que > usa: &gt; (grader than)
+- no caso do E comercial & usa: &amp; (amper)
+- no caso das aspas duplas "" usa: &quot; (quote)
+- no caso das aspas simples / apóstrofo '' usa: &apos; (apostrofe)
+-->
+
+<!--anatomia de um documento HTML-->
+
+digita: ! e o próprio VSCode completa o resto:
+<!DOCTYPE html>
+<html lang="pt-br"> <!--diz o idioma do site-->
+    <head>
+        <meta charset="utf-8"> <!--aceita o maior número de caracteres-->
+        <meta name="viewport" content="width=device-width,initial-scale=1.0"> <!--essa tag meta deixa o site adaptado para pc e smartphone-->
+
+        <title>título da página que fica na aba da página</title>
+    </head>
+    <body>
+        <p> aqui fica tudo que a pessoa vê - conteúdo - na página</p>
+    </body>
+</html>
+
+<!-- 2 - trabalhando com elementos -->
+
+<!--Semântica
+
+- dar significado
+- elementos semânticos
+
+-->
+
+
+<!--Cabeçalhos e parágrafos-->
+
+<h1>Sobre mim</h1>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+<p>Natus maiores velit sit dolorem. Praesentium vitae, eum, exercitationem similique recusandae totam, dolores nemo autem fuga ut et excepturi repellat. Atque, quia?</p>
+
+<h2>nascimento</h2> <!--nao pode ter mais do que 3 h2 ou h3-->
+<h3>infância</h3>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p> <!--separa as sessões em duas tag p pra quebrar as lihas e ficar melhor da pessoa entender-->
+
+<h3>Adolescência</h3>
+<p>
+Magni rerum voluptatum fuga odio quam animi soluta iste sit excepturi debitis, veniam ex reiciendis autem iure sapiente at asperiores maiores. Laboriosam?
+</p>
+
+<h2>Trabalho</h2>
+<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate unde cum esse perspiciatis architecto perferendis ad accusantium molestias. Quaerat temporibus autem corrupti ea saepe illo itaque quibusdam aliquid, voluptates quisquam!</p>
+
+<a href="">Saiba Mais</a>
+
+<!--Listas
+- ordenadas
+-não ordenadas
+-->
+<h1>suco detox</h1>
+<h2>Ingredientes</h2>
+
+
+- lista ordenada:
+<ol>
+    <li>3 folhas de couve;</li>
+    <!--para criar mais de uma linha ao mesmo tempo, é só digitar li*n (n= número de linhas que vc quer)-->
+    <li>1 laranja</li> <!--li é a lista. para fazer uma lista ordenada, coloca as tag li dentro de uma tag ol, para fazer uma lista não ordenada coloca os li dentro de uma tag ul-->
+    <li>1 pedaço de gengibre</li>
+    <li>300ml de água</li>
+    <li>adoçante a gosto</li>
+    <li>gelo a gosto</li>
+</ol>
+- Lista não ordenada:
+<ul>
+    <li>3 folhas de couve;</li>
+    <!--para criar mais de uma linha ao mesmo tempo, é só digitar li*n (n= número de linhas que vc quer)-->
+    <li>1 laranja</li> <!--li é a lista. para fazer uma lista ordenada, coloca as tag li dentro de uma tag ol, para fazer uma lista não ordenada coloca os li dentro de uma tag ul-->
+    <li>1 pedaço de gengibre</li>
+    <li>300ml de água</li>
+    <li>adoçante a gosto</li>
+    <li>gelo a gosto</li>
+
+</ul>
+
+<!--Citações-->
+<blockquote cite="https://developer.mozilla.org/un-US/docs/Web/HTML/Element/blockquote">
+    O <strong>Elemento HTML <code>&lt;blockquote&gt;</code></strong> (ou <em>HTML Block Quotation Element</em>) Indica que um texto externo foi citado.
+</blockquote>
+
+ou pode ser com a tag cite
+<p>
+De acordo com <a href="https://developer.mozilla.org/un-US/docs/Web/HTML/Element/blockquote"><cite>Página MDN blockquote</cite></a>:
+</p>
+
+ou pode ser feito com a tag q 
+<p>
+O elemento quote - <code>&lt;q&gt;</code> - é <q cite="https://developer.mozilla.org/un-US/docs/Web/HTML/Element/blockquote">Usado para citações curtas que não precisam de parágrafos ou quebras de linha.</q> -- <a href="https://developer.mozilla.org/un-US/docs/Web/HTML/Element/blockquote"><cite>MDN q page</cite></a>.
+</p>
+
+<!--Abreviações-->
+<p> Usamos <abbr title="Hypertext Markup Language">HTML</abbr> para estruturar nossos documentos da web.</p>
+
+<!--Detalhes de contato-->
+tag adress serve para colocar contato da pessoa que escreveu a página
+
+<address>
+    <p>Charlie Bellow <br>
+    <strong> Palmeira dos Índios, AL</strong></p>
+</address>
+
+<!--Listas de Descrições
+<dl>
+    <dt></dt> é o índice
+    <dd></dd> é a descrição do índice
+</dl>
+-->
+<h2>Glossário</h2>
+<dl>
+    <dt>Hypertext</dt> 
+    <dd>É um hiper texto com possibilidades...</dd>
+    <dt>Markup</dt>
+    <dd>é um hiper texto com...</dd>
+
+</dl>
+
+<!--Representando códigos de computdor
+
+<code>
+partes genéricas de códigos
+
+<pre>
+blocos de código, pois essa tag mantém os pedaços em branco e recuos que eu colocar no meu código.
+
+<xmp> serve pra colocar uma tag pre dentro de uma tag pre mas já caiu em desuso. para contornar isso, usa os caractéries especiais &lt;pre&gt;
+-->
+
+<pre>
+    <code>
+        <h1>minha tag h1 pra formar um título de página</h1>
+    </code>
+</pre>
+
+<!--elementos genéricos
+
+    - <div> serve pra criar blocos e separar o texto em linha
+    - <span> cria um outro bloco, mas mantém na mesmo linha
+
+serve pra quando vc precisa manter ou separar elementos por linha para usar no css ou no javascript
+
+-->
+
+<div class="cart">
+    <span>Camiseta</span>
+    <span> R$ 99,99</span>
+</div>
+<span>outro</span> <span>texto.</span>
+
+<!---->
+<!---->

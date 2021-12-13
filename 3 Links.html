@@ -1,0 +1,122 @@
+<!--3 Links-->
+
+<!--Hyperlinks - Elemento Âncora: <a> (faz a ligação entre páginas)
+
+    + Anatomia
+        <a href="https://www.endereçodosite.com">conteúdo</a>
+
+    + Atributos:
+    - globais (ex.: title, id, class...)
+    -href (referência à URL)
+        - para onde iremos quando clicamos no link?
+            -url completa: https://www.google.com
+            - fragmento
+            - email: mailto:charliebftm@gmail.com
+            - telefone telto:+5582996008552
+            - e outros
+    - download
+    - target: qual é o alvo do disparo (diz se abe em uma nova aba ou não)
+        - _self (padrão) - fica na mesma página
+        - _blank - vai para outra página
+
+-->
+
+<a href="www.google.com" target="_blank">Google</a>
+
+<p>Encontre-me:</p>
+
+<ul>
+    <li><a href="https://www.rocketseat.com.br" target="_blank">Site</a></li>
+    <li><a href="mailto:charliebftm@gmail.com>">Email</a></li>
+    <li><a href="tel:+5582996008552">Telefone</a></li>
+
+</ul>
+
+<!--Fragmento
+Serve pra quando vc quer que a página salte para uma parte específica da página. tipo um índice onde vc pode clicar e a página te leva diretamente pra um tópico que vc quer ver. tipo ele pula pra parte que vc quer no lugar de vc ter que rolar lá pra baixo.
+o link também já fica setado nessa parte que vc quer, então dá pra enviar o link assim e a pessoa já abre direto nessa parte
+
+-->
+
+<p>Saiba mais</p>
+<ul>
+    <li><a href="#about">Sobre mim</a></li>
+    <li><a href="#history">História</a></li>
+    <li><a href="#works">Trabalhos</a></li>
+
+</ul>
+
+<h1 id="about">Sobre mim</h1>
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque sint eum dolorem impedit deserunt non culpa, ducimus eos nobis repudiandae, reiciendis dolor laborum, ad officiis animi dolorum iusto. Unde, facere!
+
+<h2 id="history">História</h2>
+Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate doloremque blanditiis magni culpa eius suscipit fugiat, voluptatum adipisci officiis nostrum fugit asperiores error rerum, possimus modi et perferendis sint a.
+
+<h2 id="works">Trabalhos</h2>
+Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores itaque nulla nesciunt sequi incidunt illum aut minima explicabo labore perspiciatis consequatur aspernatur pariatur amet optio, obcaecati nostrum, consequuntur laboriosam dolorum.
+
+<!--Conteúdo do hiperlink
+    - pode ser qualquer conteúdo: 
+    tags
+    - atributo title: serve pra quando vc descansar o mouse em cima ele mostrar um texto (não funciona para smartphone ou tablete pq são touchscreen)
+    - tag p
+-->
+
+<a href="http://google.com" title="ir para google"><h1>Google</h1>
+<p>claro que posso colocar parágrafo</p>
+<img src="https://source.unsplash.com/random">
+</a>
+
+<!--URLs e Caminhos dos arquivos
+
+    -Uniform Resource Locator (URL)
+        -https://rocketseat.com.br
+        - Sequência de texto que define onde algo está localizado na web
+
+    - URL usam caminhos para encontrar arquivos
+
+    - Caminhos dos arquivos
+        - onde, no ex-plorador de arquivos, um recurso está localizado
+
+-->
+
+<a href="meuprojeto.html" target="_blank">abrir hiperlink</a>
+<a href="https://www.google.com" target="_blank">abrir google</a>
+
+<!--Como navegar pelos caminhos
+    - mesmo diretório: é só colocar o nome do arquivo
+    - entrando em diretórios: pasta/nome do arquivo
+    - saindo de diretórios: ../pastaQueDeseja
+    - diretório raiz (root ou pai): ./seuArquivo
+
+-->
+<a href="index.html">abre o arquivo que está na mesma pasta</a>
+
+<a href="outros/meuprojeto.html">abre o arquivo na pasta outros, ou seja, abre um arquivo na pasta diferente da qual estou</a>
+
+<a href="../index.html">saindo da pasta que estou pra acessar outro arquivo na pasta anterior</a>
+
+<a href="./3 Links.html">arquivo na pasta raiz</a>
+
+
+<!--Caminhos absolutos vs Caminhos relativos
+
+
+    URLS absolutos versus relativos
+
+
+    - Absolutos
+        -inclui protocolo e nome de domínio
+            - http://www.rocketseat.com.br/projeto/index.html
+
+        - sempre apontará para o mesmo local, pois é absoluto
+
+
+    - Relativos
+        - relativo à página ou pasta aberta no momento
+        - apontará para lugares diferentes
+
+-->
+
+<a href="google.com">relativo: ir para o google, fica relativo a pasta, se na pasta não tem o arquio ele não vai</a>
+<a href="https://google.com">absoluto: ir para o google</a>
