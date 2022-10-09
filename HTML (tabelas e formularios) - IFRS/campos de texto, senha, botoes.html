@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Campo de texto</title>
+</head>
+<body>
+	<header><h1>Campo de texto</h1></header>
+	<nav></nav>
+	<section>
+		<form method="post" action="#">
+			<fieldset>
+			<legend>Dados Pessoais</legend>
+			Nome completo/Nome Social: <input type="text" name="Nome" placeholder="Informe o seu nome" required><br>
+			Email: <input type="text" placeholder="Informe seu e-mail"><br>
+			Nascimento: <input type="text" name="nascimento" placeholder="__/__/____">
+		</fieldset>
+
+			<br>
+			CPF: <input type="text" name="cpf" placeholder="___.___.___-__" maxlength="14" pattern="[ 0 - 9 ] {3} \. [ 0 - 9 ] {3} \. [ 0 - 9 ] {3} - [ 0 - 9 ] {2}"><br> <!-- é assim que escreve CPF-->
+			
+		
+			<button type="button">Ir</button> <!-- botão simples-->
+			<br>
+		</form>
+	</section>
+		<br>
+	<section>
+		<form method="post" action="#">
+			Nome: <input type="text" name="Nome" placeholder="Informe seu nome"><br> <!-- placeholder=colocar um texto dentro do campo de texto -->
+			Senha: <input type="password" name="senha" placeholder="Informe sua senha"> <!-- para incluir senhas-->
+
+			<button type="submit">Login</button> <!-- botão de submissão para login, ou para enviar informações-->
+			
+		</form>
+		<br>
+		<form method="post" action="#">
+			Título: <input type="text" name="título"><br>
+			Descrição: <textarea name="descricao" cols="30px" rows="8px"></textarea> 
+
+			<!-- adiciona um espaço para texto grande-->
+		</form>
+	</section>
+	<section>
+		<p>Gênero:</p>
+		<form action="post">
+			<label for="homem">Homem</label>
+			<input type="radio" name="Gênero" id="homem" value="homem"><br> 
+			<label for="mulher">Mulher</label>
+			<input type="radio" name="Gênero" id="mulher" value="mulher"><br>
+			<label for="não-binário">Não-Binário</label>
+			<input type="radio" name="Gênero" id="não-binário" value="não binário"> <!-- o lable e o input adciona uma opção para marcar o gênero-->
+		</form>
+		<br>
+	</section>
+	<section>
+		<form method="post" action="#">
+			<label for="endereco">Endereço:</label>
+				<textarea id="endereco" name="endereco">Av. Brasil, 12 - Cidade...</textarea> <!-- o id serve para que o cursor apreça no textarea quando a pessoa clicar no rótulo endereço-->
+		</form>
+
+	</section>
+
+</body>
+</html>

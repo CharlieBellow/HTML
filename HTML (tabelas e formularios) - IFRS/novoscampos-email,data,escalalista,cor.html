@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Novos campos</title>
+</head>
+<body>
+	<h1>Preencher endereço de email:</h1>
+	<form method="post" action="recebe.php">
+		Email:<input type="email" name="email"><br>
+		Data:<input type="date" name="data"><br>
+		Escala:<input type="range" name="faixa"><br>
+		Cor:<input type="color" name="cor"><br>
+		Qual sua linguagem preferida?<br>
+		Lista: <input list="cursos" name="curso">
+					<datalist id="cursos">
+						<option value="HTML">
+						<option value="CSS">
+						<option value="Javascript">
+					</datalist>
+	</form>
+</body>
+</html> 
